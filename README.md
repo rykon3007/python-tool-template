@@ -1,5 +1,7 @@
 # python-tool-template
 --
+DevContainerを使って簡単にPythonでツール環境が用意できるリポジトリ
+モノレポは考慮されていない
 
 ## 前提条件
 - Docker Desktopがインストールされていること

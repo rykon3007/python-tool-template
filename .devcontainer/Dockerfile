@@ -6,5 +6,8 @@ RUN apt-get update && \
     apt-get -y install software-properties-common && \
     pip install --upgrade pip
 
-# Install Basic Packages
-RUN pip install ipykernel jupyter
+# requirements.txtファイルをコンテナにコピー
+COPY requirements.txt /tmp/
+
+# requirements.txtにリストされたパッケージをインストール
+RUN pip install -r /tmp/requirements.txt
